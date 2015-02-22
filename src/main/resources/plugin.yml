@@ -1,0 +1,7 @@
+main: com.grim.spnhelp.Main
+name: SPNHelp
+author: Grim
+description: SPN Help plugin
+version: 1.0
+commands:
+    help:

@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="SPNHelp">
+    <output-path>$USER_HOME$/Desktop/SPN Server Stuff</output-path>
+    <root id="archive" name="SPNHelp.jar">
+      <element id="module-output" name="SPNHelp" />
+    </root>
+  </artifact>
+</component>
