@@ -19,17 +19,22 @@ public class Menu {
         inventory = Bukkit.getServer().createInventory(null, 9, colourCode("inventoryname"));
         for(int i = 0; i < 9; i++) {
             if(config.getString("SLOT" + i + ".name") != null) {
-                int id = config.getInt("SLOT" + i + ".id");
                 String name = colourCode("SLOT" + i + ".name");
                 String lore = colourCode("SLOT" + i + ".lore");
-                inventory.setItem(i, item(id, name, lore));
+                inventory.setItem(i, item(config.getString("SLOT" + i + ".id"), name, lore));
             }
         }
     }
     
-    private ItemStack item(int id, String name, String lore){
+    private ItemStack item(String item, String name, String lore){
+        String[] itemInfo = item.split(":");
+        int id = Integer.valueOf(itemInfo[0]);
         ItemStack i = new ItemStack(id, 1);
         ItemMeta im = i.getItemMeta();
+        if(itemInfo.length == 2){
+            Short damageValue = Short.valueOf(itemInfo[1]);
+            i.setDurability(damageValue);
+        }
         im.setDisplayName(name);
         im.setLore(Arrays.asList(lore));
         i.setItemMeta(im);
