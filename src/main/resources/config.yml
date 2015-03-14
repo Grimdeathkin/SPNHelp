@@ -1,2 +1,38 @@
 help:
     -
+inventoryname: '&aServer Selector'
+SLOT1:
+    id: 58
+    name: '&aSkywars'
+    lore: '&7Connect to Skywars'
+    server: skywars
+SLOT2:
+    id: 46
+    name: '&aFactions'
+    lore: '&7Connect to Factions'
+    server: factions
+SLOT3:
+    id: 2
+    name: '&aSkyblock'
+    lore: '&7Connect to Skyblock'
+    server: skyblock
+SLOT4:
+    id: 137
+    name: '&aFreebuild'
+    lore: '&7Connect to Freebuild'
+    server: freebuild
+SLOT5:
+    id: 7
+    name: '&aPrison'
+    lore: '&7Connect to Prison'
+    server: prison
+SLOT6:
+    id: 276
+    name: '&aSurvival Games'
+    lore: '&7Connect to Survival Games'
+    server: sg
+SLOT7:
+    id: 267
+    name: '&aKitPVP'
+    lore: '&7Connect to KitPVP'
+    server: kitpvp
